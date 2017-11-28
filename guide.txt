@@ -1,0 +1,25 @@
+
+	
+	<div class="CRJ1NGC-Yl-l"> (Image Column)
+		<div class="gwt-Label CRJ1NGC-Yl-t" aria-hidden="true" style="display: none;">Updated</div> 
+		<div><img alt="A Google User profile image" class="CRJ1NGC-pk-a" src="xx" gwtuirendered="gwt-uid-704"></div>
+		<div><button class="CRJ1NGC-f-a CRJ1NGC-f-p CRJ1NGC-Qm-a">Cool</button></div> (Button itself)
+	</div>
+	
+	this is the XPath: 
+	
+	/html/body/div[3]/div/div[2]/div/div[2]/div/div[3]/div/div[2]/div/div[2]/div/div[1]/div/div/div[2]/div/div[2]/div/section/div[3]/div[2]/div[3]/section/article/div[2]/div[1]/div[3]/button
+
+Build get Button
+	figure out how to adapt to dynamic webView (??)
+	find <article> classes
+	find image tag
+	append button to the end of each image
+
+Build Questionare Module
+	Create a Questionare Module that ask questions on each items
+	get information based on button location
+
+Request to Jira
+	Make a request to Jira creating issues (https://developer.atlassian.com/jiradev/jira-apis/about-the-jira-rest-apis/jira-rest-api-tutorials/jira-rest-api-example-create-issue)
+
