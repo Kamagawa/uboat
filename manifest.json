@@ -27,7 +27,6 @@
         "matches": ["https://github.com/*"],
         "js": [
           "external/jquery.min.js", 
-          "external/simple-modal.js", 
           "external/vex.combined.min.js",
           "lib/inject.js"
         ],
