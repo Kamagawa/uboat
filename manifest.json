@@ -20,7 +20,8 @@
       "activeTab",
       "storage",
       "notifications",
-      "contextMenus"
+      "contextMenus",
+      "https://jira.bbqnx.net/*"
     ],
     "content_scripts" : [
       {
