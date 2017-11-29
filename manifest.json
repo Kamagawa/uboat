@@ -24,7 +24,12 @@
     ],
     "content_scripts" : [
       {
-        "matches": ["https://github.com/*"],
+        "matches": [
+          "https://github.com/*",
+          "http://github.com/*",
+          "https://play.google.com/*",
+          "http://play.google.com/*"
+        ],
         "js": [
           "external/jquery.min.js", 
           "external/vex.combined.min.js",
