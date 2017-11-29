@@ -31,9 +31,16 @@
           "http://play.google.com/*"
         ],
         "js": [
-          "external/jquery.min.js", 
-          "external/vex.combined.min.js",
-          "lib/inject.js"
+          
+          "./external/jquery.min.js",           
+          "./external/vex.combined.min.js",
+          "./lib/final.utils.js",
+          "./lib/tools.utils.js",
+          "./lib/modal.template.js",
+          "./lib/modal.component.js",
+          "./lib/github.adaptor.js",
+          "./lib/gplay.adaptor.js",
+          "./lib/main.js"
         ],
         "css": [
           "external/vex.css",
