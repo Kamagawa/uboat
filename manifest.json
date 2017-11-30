@@ -2,7 +2,7 @@
     "manifest_version": 2,
   
     "name": "Play to JIRA",
-    "description": "the app that helps you create Jira issue based on Google Player Console Input",
+    "description": "This extension allows you to create Jira issue directly from Google Player Console",
     "version": "1.0",
   
     "browser_action": {
@@ -10,11 +10,6 @@
       "default_popup": "lib/popup.html"
     },
     "options_page": "lib/options.html",
-
-    "background": {
-      "scripts": ["lib/eventPage.js"],
-      "persistent": false
-    },
 
     "permissions": [
       "activeTab",

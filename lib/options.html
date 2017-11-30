@@ -1,19 +1,31 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Budget Manager Options</title>
-		 
-    <script src="./jquery-3.2.1.min.js"></script>
-    <script src="./options.js"></script>
-		<link rel = "stylesheet" type = "text/css" href = "popup.css">
-		
+<link rel="stylesheet" type="text/css" href="/lib/options.css" />
+<script src="/external/jquery.min.js"></script>
+<script src="/lib/tools.utils.js"></script>
+<script src="/lib/options.js"></script>
 
-	</head>
 
-	<body>
-		<h1>Budget Manager Options</h1>
-		<h2>Limit: <input type="text" id="limit"></h2>
-		<input type="submit" id="saveLimit" value="Save Limit">
-		<input type="submit" id="resetTotal" value="Reset Total">
-	</body>
-</html>
+
+<div class="login-page">
+		<div class="form">
+			<form class="account-form">
+	
+					<h1 style="color: #4CAF50;">Welcome<span id="displayName">D</span></h1>
+					<div style=" padding: 8px; margin-bottom: 20px;"> 
+						<img id="userImage" src="https://jira.bbqnx.net/secure/useravatar?avatarId=10104"/>
+						<h2 id="out_username">username</h2>
+					</div>
+				<a id="rem" href=""><button>Remove</button></a>
+				<p class="message"><a href="#">Need help get started? </a></p>
+			</form>
+			<form class="login-form">
+				<h1 style="color: #4CAF50;">Jira Login</h1>
+				<div style="text-align: left; padding: 8px; margin-bottom: 20px;"> 
+					<p clas="message">Your Jira Credential is used for authentication when you create a new issue.</p>
+				</div>
+				<input id="in_username" type="text" placeholder="username"/>
+				<input id="in_password" type="password" placeholder="password"/>
+				<a id="auth" href=""><button>Authenticate</button></a>
+				<p class="message"><a href="#">Need help get started? </a></p>
+			</form>
+		</div>
+	</div>
