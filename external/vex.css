@@ -46,7 +46,7 @@
   position: fixed;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  z-index: 1111;
+  z-index: 1503;
   top: 0;
   right: 0;
   bottom: 0;
@@ -63,7 +63,7 @@
   -webkit-animation: vex-fadein .5s;
   animation: vex-fadein .5s;
   position: fixed;
-  z-index: 1111;
+  z-index: 1503;
   background: rgba(0, 0, 0, 0.4);
   top: 0;
   right: 0;
@@ -103,7 +103,7 @@
   animation: vex-rotation .7s linear infinite;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
   position: fixed;
-  z-index: 1112;
+  z-index: 1504;
   margin: auto;
   top: 0;
   right: 0;
