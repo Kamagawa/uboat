@@ -21,10 +21,8 @@
     "content_scripts" : [
       {
         "matches": [
-          "https://github.com/*",
-          "http://github.com/*",
-          "https://play.google.com/*",
-          "http://play.google.com/*"
+          "*://github.com/*",
+          "*://play.google.com/*"
         ],
         "js": [
           
