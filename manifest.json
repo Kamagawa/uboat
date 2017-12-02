@@ -7,9 +7,9 @@
   
     "browser_action": {
       "default_icon": "icon.png",
-      "default_popup": "lib/popup.html"
+      "default_popup": "lib/popup/popup.html"
     },
-    "options_page": "lib/options.html",
+    "options_page": "lib/options/options.html",
 
     "permissions": [
       "activeTab",
@@ -27,18 +27,20 @@
           "http://play.google.com/*"
         ],
         "js": [
-          
           "./external/jquery.min.js",           
           "./external/vex.combined.min.js",
-          "./lib/final.utils.js",
-          "./lib/tools.utils.js",
-          "./lib/modal.template.js",
-          "./lib/modal.component.js",
-          "./lib/github.adaptor.js",
-          "./lib/gplay.adaptor.js",
+          "./lib/utils/constants.js",
+          "./lib/utils/parser.js",
+          "./lib/api/xhr.js",
+          "./lib/api/jira.js",
+          "./lib/api/chrome.js",          
+          "./lib/modal/ask.js",
+          "./lib/adaptor/github.js",
+          "./lib/adaptor/gplay.js",
           "./lib/main.js"
         ],
         "css": [
+          "/lib/adaptor/button.css",
           "external/vex.css",
           "external/vex-theme-os.css"
         ],
