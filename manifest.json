@@ -25,7 +25,6 @@
           "*://play.google.com/*"
         ],
         "js": [
-          
           "./external/jquery.min.js",   
           "./external/materialize.min.js",        
           "./external/vex.combined.min.js",
@@ -40,11 +39,7 @@
           "./lib/main.js"
         ],
         "css": [
-          "/external/materialize.min.css",
-          "/external/w3.css",
-          "/lib/adaptor/button.css",
-          "external/vex.css",
-          "external/vex-theme-default.css"
+          "/external/materialize.min.css"
         ],
         "run_at": "document_end"
       }
