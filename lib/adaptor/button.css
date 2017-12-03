@@ -1,149 +1,45 @@
-.gstyle {
-    background-color: #0277bd;
-    color: white;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 
-    0 3px 1px -2px rgba(0,0,0,0.12), 
-    0 1px 5px 0 rgba(0,0,0,0.2);
-
-    border: none;
-    border-radius: 2px;
-    box-sizing: border-box;
-    cursor: pointer;
-    display: inline-block;
-    font: 500 14px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
-    min-height: 36px;
-    line-height: 36px;
-    margin: 0;
-    min-width: 54px;
-    outline: none;
-    padding: 0 16px;
-    text-align: center;
-    transition-property: background-color,box-shadow,color,opacity;
-    transition-duration: .4s;
-    transition-timing-function: cubic-bezier(0.25,0.8,0.25,1);
-    text-transform: uppercase;
-    vertical-align: middle;
-
-    min-height: 28px;
-    padding-top: 100px;
-    background-clip: padding-box;
-    background-color: rgba(0,0,0,0.2);
+.waves-effect {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.3s ease-out;
 }
 
-.modal .modal-header {
-  position: absolute;
-  top: 0px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+.btn, .btn-large {
+  color: rgb(255, 255, 255);
+  background-color: rgb(38, 166, 154);
+  text-align: center;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s ease-out;
 }
 
-.modal .modal-header {
-  background-color: rgb(250, 250, 250);
-  height: 56px;
-  width: 100%;
-  text-align: left;
-  border-radius: 0px 0px 2px 2px;
-  padding: 4px 6px;
+.btn, .btn-large, .btn-floating, .btn-large, .btn-flat {
+  font-size: 1rem;
+  outline: 0px;
 }
 
-
-.greenbtn {
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    outline: 0;
-    background: #4CAF50;
-    height: 100%;
-    width: 100%;
-    border: 0;
-    padding: 15px;
-    color: #FFFFFF;
-    font-size: 14px;
-    -webkit-transition: all 0.3 ease;
-    transition: all 0.3 ease;
-    cursor: pointer;
-  }
-  .greenbtn:hover, .greenbtn:active, .greenbtn:focus {
-    background: #43A047;
-  }
-
-
-
-.switch {
-position: relative;
-display: inline-block;
-width: 90px;
-height: 34px;
+.btn, .btn-large, .btn-flat {
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  border-radius: 2px;
+  padding: 0px 2rem;
 }
 
-.switch input {display:none;}
-
-.slider {
-position: absolute;
-cursor: pointer;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background-color: #ca2222;
--webkit-transition: .4s;
-transition: .4s;
-}
-
-.slider:before {
-position: absolute;
-content: "";
-height: 26px;
-width: 26px;
-left: 4px;
-bottom: 4px;
-background-color: white;
--webkit-transition: .4s;
-transition: .4s;
-}
-
-input:checked + .slider {
-background-color: #2ab934;
-}
-
-input:focus + .slider {
-box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
--webkit-transform: translateX(55px);
--ms-transform: translateX(55px);
-transform: translateX(55px);
-}
-
-/*------ ADDED CSS ---------*/
-.on
-{
-display: none;
-}
-
-.on, .off
-{
-color: white;
-position: absolute;
-transform: translate(-50%,-50%);
-top: 50%;
-left: 50%;
-font-size: 10px;
-font-family: Verdana, sans-serif;
-}
-
-input:checked+ .slider .on
-{display: block;}
-
-input:checked + .slider .off
-{display: none;}
-
-/*--------- END --------*/
-
-/* Rounded sliders */
-.slider.round {
-border-radius: 34px;
-}
-
-.slider.round:before {
-border-radius: 50%;
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px;
 }
