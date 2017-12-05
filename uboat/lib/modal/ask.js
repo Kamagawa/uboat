@@ -2,7 +2,7 @@
 let onResultCallBack = function(status, data){
     if (status == 201) {
         $('#notif-body').text('Your issue has been created!');
-        $('#linkToNewIssue').attr('href', BASE_URL + '/browse/' +data.key);
+		$('#linkToNewIssue').text('View on Jira');
         $('#inform').modal('open');
     } else if (status == 400) {
         $('#notif-body').text(JSON.stringify(data));
@@ -22,7 +22,24 @@ let open=()=>{$('#modal1').modal('open');}
 let close=()=>{$('#modal1').modal('close')}
 let closeOK=()=>{$('#inform').modal('close')}
 
+let IsLoggedIn=()=>{
+	JIRA_GET_USER(function(code, response){
+		if (code > 200) {	
+			$('#notif-body').text('Your are not logged In!');
+			$('#linkToNewIssue').text('Log me IN');
+			$('#linkToNewIssue').attr('href', 'https://jira.bbqnx.net/login.jsp');
+			$('#inform').modal('open');
+			return false;
+		} else {
+			open();
+			return true
+		}
+		
+	});
+}
+
 let materialModal=(rev)=>{
+	IsLoggedIn();
     $('select').material_select();
     $('#summary').val(rev.summary);
     $('#description').val(rev.description);
@@ -31,8 +48,7 @@ let materialModal=(rev)=>{
     $('#description').trigger('autoresize');
     $('.submit').click(submit);
     $('#OK-close').click(closeOK);
-    $('.close').click(close);
-    open();
+    $('.close').click(close);    
 }
 
 let submit=()=>{
@@ -45,12 +61,10 @@ let submit=()=>{
     var desc = $('#description').val();
     var requestType = $('#requestType').val();
 
-    // console.log(components);console.log(plat);   // debug output
     data.fields.summary = sum;
     data.fields.description = desc;
     data.fields.project = { key: projectID};
     data.fields.issuetype = { id: issType };
-
 
     if (issType == 1){                                  //defect
         data.fields.components = [{id: compo}];
@@ -66,9 +80,7 @@ let submit=()=>{
         data.fields.customfield_14000 = [{id: plat}];
         data.fields.customfield_12002 = { id: requestType }; //requestType
     }
-
-    console.dir(data);
-    
+    console.dir(data);    
     JIRA_CREATE_ISSUE(JSON.stringify(data), onResultCallBack);
     close();
 }
@@ -192,14 +204,12 @@ var initModal=(data)=>{
             <p id = "notif-body"></p>
         </div>
         <div class="modal-footer">
-            <a href="" id="linkToNewIssue" class="btn waves-effect waves-light">View on Jira</a>
-            <a href="closeOK()" id="OK-close" class="btn waves-effect waves-light">OK</a>
+			<a href="javascript:void(0);" id="OK-close" class="btn waves-effect waves-light">OK</a>
+            <a href="" id="linkToNewIssue" class="btn waves-effect waves-light" target="_blank">View on Jira</a>
+            
         </div>
-    </div>`
-
-    ;
+    </div>`;
     $('body').prepend(template);
-
 }
 
 

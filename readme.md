@@ -6,9 +6,13 @@ Play to Jira is a browser extension that enables user to add jira issue to their
  * Customize and add specific info to Jira issues
 
 ## Installation
-### Google Chrome(Development)
+### Google Chrome(packed)
  1. Clone this repository
  2. drag and drop uboat.crx to a chrome window
- 3. Or go to Chrome://extension, load unpacked extension, load uboat folder
+ 
+ ### Google Chrome(unpacked)
+ 1. Go to Chrome://extensions
+ 2. Check developer mode 
+ 3. Click load unpacked extension.., load the 'app' folder
 
  
