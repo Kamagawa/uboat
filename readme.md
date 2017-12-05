@@ -1,4 +1,4 @@
-# Play to Jira
+# Jira+
 Play to Jira is a browser extension that enables user to add jira issue to their designated address
 
 ## Feature
