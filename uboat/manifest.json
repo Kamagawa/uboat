@@ -1,0 +1,51 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Jira+",
+    "description": "This extension allows you to create Jira issue directly from Google Player Console",
+    "version": "1.0",
+    "icons": {
+      "16": "/fav/png-temp-data7cM4wO-0.png",
+      "24": "/fav/png-temp-data7cM4wO-1.png",
+      "32": "/fav/png-temp-data7cM4wO-2.png",
+      "64": "/fav/png-temp-data7cM4wO-3.png",
+      "114": "/fav/png-temp-data7cM4wO-4.png"
+    },
+    "browser_action": {
+      "default_icon": "/fav/png-temp-data7cM4wO-4.png"
+    },
+    "options_page": "lib/options/options.html",
+
+    "permissions": [
+      "activeTab",
+      "storage",
+      "notifications",
+      "contextMenus",
+      "https://jira.bbqnx.net/*"
+    ],
+    "background": {
+      "scripts": [ "/lib/options/background.js" ]
+    },
+    "content_scripts" : [
+      {
+        "matches": [
+          "*://play.google.com/*"
+        ],
+        "js": [
+          "./external/jquery.min.js",   
+          "./external/materialize.min.js",
+          "./lib/utils/constants.js",
+          "./lib/utils/parser.js",
+          "./lib/api/jira.js",
+          "./lib/modal/ask.js",
+          "./lib/adaptor/gplay.js",
+          "./lib/main.js"
+        ],
+        "css": [
+          "/external/materialize.css"
+        ],
+        "run_at": "document_end"
+      }
+    ]
+  }
+

@@ -1,0 +1,45 @@
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  
+  .btn, .btn-large {
+    color: rgb(255, 255, 255);
+    background-color: rgb(38, 166, 154);
+    text-align: center;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+  }
+  
+  .btn, .btn-large, .btn-floating, .btn-large, .btn-flat {
+    font-size: 1rem;
+    outline: 0px;
+  }
+  
+  .btn, .btn-large, .btn-flat {
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 2px;
+    padding: 0px 2rem;
+  }
+  
+  .z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px;
+  }

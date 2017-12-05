@@ -5,7 +5,6 @@ $(function () {
 
     //creating buttons on top of existing components
     function addButtonDetail() {
-        addButtonGithub();
         addButtonGooglePlay();    
     }
 
@@ -34,6 +33,13 @@ $(function () {
                     initModal();
                     $('.modal').modal();                    
                 }
+                var num = $('#issuetype').val();
+                if (num == 6 || num == 7){
+                    $('#reqSquare').attr('style', 'display:inline');
+                } else {
+                    $('#reqSquare').attr('style', 'display:none');
+                }
+
                 
                 var articles = $('article').length;
                 var occurance = $('.openModal').length;
