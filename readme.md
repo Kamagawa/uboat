@@ -21,12 +21,6 @@ Play to Jira is a browser extension that enables user to add jira issue to their
  1. Go to google, search Google Chrome download
  2. install Google Chrome, and follow the Google Chrome Installation instruction
 
-### IE
- 1. Good memes
-
-### Edge
- 1. Yolo
-
 ## Contributors
  1. Fork this repository
  2. Create a branch and make your changes

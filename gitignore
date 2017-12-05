@@ -1,1 +1,5 @@
-.idea/*
+.idea/codeStyles/codeStyleConfig.xml
+.idea/modules.xml
+.idea/uboat.iml
+.idea/vcs.xml
+.idea/workspace.xml

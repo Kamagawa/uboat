@@ -6,8 +6,7 @@
     "version": "1.0",
   
     "browser_action": {
-      "default_icon": "icon.png",
-      "default_popup": "lib/popup/popup.html"
+      "default_icon": "icon.png"
     },
     "options_page": "lib/options/options.html",
 
@@ -18,10 +17,12 @@
       "contextMenus",
       "https://jira.bbqnx.net/*"
     ],
+    "background": {
+      "scripts": [ "/lib/options/background.js" ]
+    },
     "content_scripts" : [
       {
         "matches": [
-          "*://github.com/*",
           "*://play.google.com/*"
         ],
         "js": [
@@ -29,11 +30,8 @@
           "./external/materialize.min.js",
           "./lib/utils/constants.js",
           "./lib/utils/parser.js",
-          "./lib/api/xhr.js",
           "./lib/api/jira.js",
-          "./lib/api/chrome.js",          
           "./lib/modal/ask.js",
-          "./lib/adaptor/github.js",
           "./lib/adaptor/gplay.js",
           "./lib/main.js"
         ],
